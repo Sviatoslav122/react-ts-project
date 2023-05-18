@@ -1,4 +1,4 @@
-import React, {useEffect, useState } from 'react';
+import React, {useEffect,  } from 'react';
 import axios from 'axios';
 import {NavLink} from "react-router-dom";
 import {Outlet} from "react-router-dom";
@@ -29,7 +29,7 @@ function MoviesList() {
                 {
                     movies ?
                         movies.map((elem) => {
-
+// src={`https://image.tmdb.org/t/p/w500/${elem.backdrop_path}`}
                             console.log(elem)
                             return (
                                 <h1 key={elem.id} style={{color: 'blue'}}>
